@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antaliased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Source Serif 4', serif;
+}
+
+body {
+    margin: 5.4rem 3.7rem;
+}
+
+main {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    box-sizing: content-box;
+}
+
+main h1, 
+main h2{
+    color: #A54328;
+    font-size: clamp(2.8rem, 2vw + 0.4rem, 4rem);
+    line-height: clamp(3.6rem, 2vw + 1rem, 5rem);
+    font-weight: 700;
+}
+
+main img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 6.6rem 0;
+}
+
+main p,
+main li,
+main h3 {
+    font-size: clamp(1.4rem, 1vw + 0.4rem, 2rem);
+    line-height: clamp(1.8rem, 1vw + 1rem, 2.5rem);
+}
+main p {
+    color: #A54328;
+    font-weight: 400;
+}
+
+main h2 {
+    margin: 3.5rem 0;
+}
+
+main h3 {
+    color: #A54328;
+    font-weight: 700;
+}
+
+main ul li,
+main ol li {
+    color: #A54328;
+    font-weight: 400;
+    margin-left: 2.5rem;
+}
+
+main ul {
+    margin-bottom: 2rem;
+}
+
+main ol {
+    margin-bottom: 1.7rem;
+}
+
+main button {
+    display: flex;
+    width: 9.4rem;
+    height: 3.2rem;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    border-radius: 0.5rem;
+    background: #A54328;  
+    
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+main button:hover {
+    background: #621a07; 
+}
+
+/* media queries */
+@media (min-width: 1120px) {
+    body {
+        background: #F9F4FB;
+        width: 100%;
+        margin: 9.5rem 0;
+    }
+    
+    main {
+        display: flex;
+        justify-content: flex-start;
+        gap: 18rem;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    /* main h1,
+    main h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    main p,
+    main ul li,
+    main ol li,
+    main h3 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    } */
+
+    #recipe {
+        max-width: 435px;
+    }
+
+    #ingredients {
+        max-width: 525px;
+    }
+    
+    main img {
+       max-width: 100%;
+       margin: 6.6rem 0;
+    }
+
+    main h2 {
+        margin-top: 0;
+        margin-bottom: 5.1rem;
+    }
+
+    main div:nth-child(2) {
+        max-width: 525px;
+    }
+
+    main ul {
+        margin-bottom: 2rem;
+    }
+
+    main ol {
+        margin-bottom: 2.4rem;
+    }
+
+    button {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+}
